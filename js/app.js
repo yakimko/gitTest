@@ -23,6 +23,9 @@ userApp.config(function ($routeProvider) {
             templateUrl: 'views/repo.html',
             controller: 'UserRepoCtrl',
             title: 'User repo info'
+        })
+        .otherwise({
+            redirectTo: '/'
         });
 });
 
