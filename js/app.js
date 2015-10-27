@@ -26,8 +26,8 @@ userApp.config(function ($routeProvider) {
         });
 });
 
-userApp.run(function ($rootScope, $route, $document) {
+userApp.run(function ($rootScope, $route) {
     $rootScope.$on('$routeChangeSuccess', function () {
-        $document.title = $route.current.title;
+        document.title = $route.current.title;
     });
 });
